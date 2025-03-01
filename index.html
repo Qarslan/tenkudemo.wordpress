@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Responsive</title>
+  <style>
+    
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+overflow-x: hidden; /* Mencegah scrolling horizontal */
+}
+
+/* Container hijau */
+.container {
+display: flex;
+justify-content: center; /* Tengah horizontal */
+align-items: center; /* Tengah vertikal */
+width: 100%;
+}
+
+/* Elemen biru */
+.center-content {
+width: 85.4rem; /* Atur lebar elemen */
+max-width: 100%; /* Membatasi lebar maksimum */
+}
+
+header img {
+width: 100%; /* Mengatur lebar gambar */
+height: auto; /* Menyesuaikan tinggi secara proporsional */
+}
+
+
+
+
+
+
+
+
+
+
+/* ==================== START HEADER NAVBAR =========================*/
+/* Header */
+.header {
+  background-color: black;
+  padding: 0px 50px;
+  display: flex;
+  padding-bottom: 90px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0px solid white;
+}
+
+/* Ikon Media Sosial */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Logo */
+.logo {
+  color: #fff;
+  margin-left: 60px;
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  position: relative;
+  top: 70px; /* Geser logo ke bawah */
+}
+
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  width: 160px;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+}
+
+/* Navigasi Menu */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: black;
+  border-top: 1px solid white;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 15px;
+}
+/*================ END HEADER NAVBAR ==============================*
+
+
+
+
+
+
+
+
+/* ================= TEXT LATEST ==================*/
+.text-latest {
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid black;   
+}
+
+.container-latest {
+  display: flex;
+  margin: 20px;
+  gap: 30px;
+}
+.featured {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #ddd; */
+  border: none;
+  padding: 10px;
+}
+.featured img {
+  width: 610px;
+  height: 410px;
+}
+.content {
+  padding: 10px;
+}
+
+.content h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.content a {
+  text-decoration: none;
+  color: black;
+}
+
+.content a h2:hover {
+  color: red;
+}
+
+.content p {
+  font-weight: normal;
+  font-size: 16.5px;
+}
+
+.author {
+  margin-top: 10px;
+}
+
+.articles {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+article {
+  /* border: 1px solid #ddd; */
+  border: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+article .category {
+  margin-top: 10px;
+}
+
+article h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+article a {
+  text-decoration: none;
+  color: black;
+}
+
+article a h3:hover {
+  color: red;
+}
+
+.category {
+  font-style: italic;
+  color: gray;
+}
+
+
+
+
+
+
+
+/* ======================================== */
+
+/* Untuk smartphone */
+@media (max-width: 480px) {
+
+  .container-latest {
+    flex-direction: column;
+    margin: 10px;
+}
+
+.featured img {
+  width: 100%;
+  height: 250px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+.featured, article {
+    width: 100%;
+}
+
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center-content">
+      <!-- <header class="text-center text-dark">
+        <img src="image/header.png" alt="Header Image">
+      </header> -->
+
+      <!-- =========================== START HEADER NAVBAR ====================================== -->
+       <!-- Header -->
+    <header class="header">
+      <!-- Ikon media sosial -->
+      <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <!-- Logo -->
+      <div class="logo">TENKU</div>
+
+      <!-- Kotak pencarian -->
+      <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search">
+          <button onclick="searchFunction()"><i class="fa fa-search"></i></button>
+      </div>
+  </header>
+
+  <!-- Menu Navigasi -->
+  <nav class="nav-menu">
+      <a href="#">Health</a>
+      <a href="#">Fashion</a>
+      <a href="#">Food</a>
+      <a href="#">Shopping</a>
+      <a href="#">Travel</a>
+      <a href="#">Event</a>
+  </nav>
+  <!-- ==================================== END HEADER NAVBAR =================================== -->
+
+
+
+
+      <!-- =========================== START TEXT-LATEST ======================================== -->
+      <section>
+        <div class="text-latest">
+          <p>LATEST</p>
+        </div>
+        <main class="container-latest">
+          <section class="featured">
+              <img src="https://tenkudemo.wordpress.com/wp-content/uploads/2023/10/08e1d-38f02-img_5775.jpeg" alt="Battersea Power Station">
+              <div class="content">
+                  <p class="category">Event</p>
+                  <a href=""><h2>The Summer of Electric Dreams: A Magical Festival at Battersea Power Station, 2022</h2></a>
+                  <p>Battersea Power Station’s redevelopment project aims to transform the iconic landmark into a vibrant mixed-use neighborhood, preserving its historic structure while adding housing, offices, shops, and cultural venues. Improved connectivity and new public spaces will revitalise this symbol of London’s industrial heritage.
+                  </p>
+                  <p class="author">Joan Smith</p>
+              </div>
+          </section>
+          <section class="articles">
+              <article>
+                  <img src="https://tenkudemo.wordpress.com/wp-content/uploads/2023/10/37ace-aee45-image-from-rawpixel-id-562873-jpeg-1.jpg" alt="Black Birds">
+                  <p class="category">Fashion</p>
+                  <a href=""><h3>The Timeless Allure of All-Black Outfits in the Fashion Scene</h3></a>
+                  <p class="author">Joan Smith</p>
+              </article>
+              <article>
+                  <img src="https://tenkudemo.wordpress.com/wp-content/uploads/2023/10/bab60-22485-img_1054.jpg" alt="Japan Adventure">
+                  <p class="category">Travel</p>
+                  <a href=""><h3>Discovering the Allure of Japan’s Capital on a Gap Year Adventure</h3></a>
+                  <p class="author">Joan Smith</p>
+              </article>
+              <article>
+                  <img src="https://tenkudemo.wordpress.com/wp-content/uploads/2023/10/9741a-44b61-image-from-rawpixel-id-3285577-jpeg.jpg" alt="Fushimi Inari Shrine">
+                  <p class="category">Japan</p>
+                  <a href=""><h3>Fushimi Inari Shrine: Kyoto’s Enchanting Gateway to the Spiritual World</h3></a>
+                  <p class="author">Joan Smith</p>
+              </article>
+              <article>
+                  <img src="https://tenkudemo.wordpress.com/wp-content/uploads/2023/10/6c044-5f4da-img_6594.jpg" alt="Mental Health Reflection">
+                  <p class="category">Health</p>
+                  <a href=""><h3>Reflecting on the Past: A Journey Towards Improved Mental Health</h3></a>
+                  <p class="author">Joan Smith</p>
+              </article>
+          </section>
+        </main>
+      </section>
+      
+      
+    </div>
+  </div>
+  <audio id="bgMusic" autoplay loop>
+    <source src="https://w1.savevids.net/downloads/19b9636b-38b5-4f8f-921d-17ffe8a1525b/somewhere%20only%20we%20know%20Gustixa%20Rhianne.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
